@@ -11,7 +11,7 @@ def cuadricula():
     col = dimensiones["col"]
     lines = dimensiones["lines"]
     
-    print(cont1 + cont2.rjust(col - len(cont1)))
+    print(cont1 + cont2.rjust(col - len(cont1)), end="")
     print("╔" + ("═" * (col - 3)) + "╗")
        
     for i in range(lines - 2):
