@@ -10,14 +10,15 @@ def cuadricula():
     cont2 = "Contador 2: []"
     col = dimensiones["col"]
     lines = dimensiones["lines"]
-    
+    margen = 2
+
     print(cont1 + cont2.rjust(col - len(cont1)), end="")
-    print("╔" + ("═" * (col - 3)) + "╗")
+    print("╔" + ("═" * (col - margen)) + "╗", end="")
        
     for i in range(lines - 2):
-        print( "║" + ("*" * (col - 3) + "║"))
+        print( "║" + ("*" * (col - margen) + "║"), end="")
 
-    print("╚" + ("═" * (col - 3)) + "╝")
+    print("╚" + ("═" * (col - margen)) + "╝", end="")
     print("Registro 1: ")
     print("Registro 2: ")
     print("Registro 3: ")
