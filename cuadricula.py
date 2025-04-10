@@ -6,10 +6,11 @@ dimensiones = {
 }
 
 def cuadricula():
-    cont1 = "Contador 1: []"
-    cont2 = "Contador 2: []"
     col = dimensiones["col"]
     lines = dimensiones["lines"]
+    cont1 = "Contador Izq.: " + str(col)
+    cont2 = "Contador Der.: " + str(lines)
+    
     margen = 2
 
     print(cont1 + cont2.rjust(col - len(cont1)), end="")
