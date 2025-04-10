@@ -29,18 +29,21 @@ def cuadricula(col, lines, cont1, cont2):
     return cont1, cont2, col, lines
 
 
-def registros():
-    print("Registro 1: ")
-    print("Registro 2: ")
-    print("Registro 3: ")
+def registros(lista):
+    for i in lista:
+        print(i)
 
 
-def main():
+def ejemplo():
     col, lines, cont1, cont2 = dimensiones()
     cuadricula(col, lines, cont1, cont2)
-    registros()
+    registros([
+        "Registro 1: ",
+        "Registro 2: ",
+        "Registro 3: ",
+    ])
 
     
 if __name__ == "__main__":
 
-    main()
+    ejemplo()
